@@ -1,0 +1,12 @@
+﻿@model Bind_Record_Into_DDL_MVC_CORE.Models.CountryClass
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Bind Data Into Dropdownlist(Select Option) Element In MVC</h1>
+<h2>Using asp.net core 3.0</h2>
+<hr/>
+<select asp-for="Cid" asp-items="@(new SelectList(@ViewBag.message,"Cid","Cname"))">
+
+</select>
+
